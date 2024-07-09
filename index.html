@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadjet Details Form</title>
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+    <div class="gadjet-container">
+        <h2>ENTER GADJET DETAILS</h2>
+        <form id="gadjetForm">
+
+            <div class="form-group">
+                <label for="category">CATEGORY:</label>
+                <div class="category-options">
+                    <label for="mobile"> <input type="checkbox" id="mobile" name="category[]" value="mobile"> MOBILE</label>
+                    <label for="laptop"> <input type="checkbox" id="laptop" name="category[]" value="laptop"> LAPTOP</label>
+                    <label for="television"> <input type="checkbox" id="television" name="category[]" value="television"> TELEVISION </label>
+                    <label for="all"> <input type="checkbox" id="all" name="category[]" value="all"> ALL</label>
+                    <label for="others"> <input type="checkbox" id="others" name="category[]" value="others"> OTHER </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="gadjetName">If other,mention FOOD NAME:</label>
+                <input type="text" id="gadjetName" name="gadjetName[]" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="gadjetDescription">GADJET DESCRIPTION:</label>
+                <textarea id="gadjetDescription" name="gadjetDescription[]" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pickupDate">PICKUP DATE:</label>
+                <input type="date" id="pickupDate" name="pickupDate[]" required>
+            </div>
+            <div class="form-group">
+                <label for="gadjetImage">GADJET IMAGE:</label>
+                <input type="file" id="gadjetImage" name="gadjetImage[]" accept="image/*" required>
+            </div>
+
+            
+            
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="scriptssgadjet.js"></script>
+</body>
+</html>
